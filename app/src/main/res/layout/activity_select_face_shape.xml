@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectFaceShape"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/roundFaceBtn"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="Round"/>
+
+            <Button
+                android:id="@+id/squareFaceBtn"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="Square"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/heartFaceBtn"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="Heart"/>
+
+            <Button
+                android:id="@+id/ovalFaceBtn"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="Oval"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.merge.user.aninterface"
+        minSdkVersion 25
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.8.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+
+sceneform.asset('sampledata/models/roundFace/billie.fbx',
+        'default',
+        'sampledata/models/roundFace/billie.sfa',
+        'src/main/res/raw/billie')
+
+sceneform.asset('sampledata/models/roundFace/carl_sunglasses.fbx',
+        'default',
+        'sampledata/models/roundFace/carl_sunglasses.sfa',
+        'src/main/res/raw/carl_sunglasses')
+
+sceneform.asset('sampledata/models/squareFace/alchemist_oval.fbx',
+        'default',
+        'sampledata/models/squareFace/alchemist_oval.sfa',
+        'src/main/res/raw/alchemist_oval')
+
+sceneform.asset('sampledata/models/squareFace/browline.fbx',
+        'default',
+        'sampledata/models/squareFace/browline.sfa',
+        'src/main/res/raw/browline')
+
+
+sceneform.asset('sampledata/models/squareFace/cateye.fbx',
+        'default',
+        'sampledata/models/squareFace/cateye.sfa',
+        'src/main/res/raw/cateye')
+
+
+sceneform.asset('sampledata/models/roundFace/marc.fbx',
+        'default',
+        'sampledata/models/roundFace/marc.sfa',
+        'src/main/res/raw/marc')
+
+
+sceneform.asset('sampledata/models/squareFace/round_frame.fbx',
+        'default',
+        'sampledata/models/squareFace/round_frame.sfa',
+        'src/main/res/raw/round_frame')
+
+
+sceneform.asset('sampledata/models/squareFace/round_sunglasses.fbx',
+        'default',
+        'sampledata/models/squareFace/round_sunglasses.sfa',
+        'src/main/res/raw/round_sunglasses')
+
+sceneform.asset('sampledata/models/heartFace/cateye_sunglasses.fbx',
+        'default',
+        'sampledata/models/heartFace/cateye_sunglasses.sfa',
+        'src/main/res/raw/cateye_sunglasses')
+
+sceneform.asset('sampledata/models/heartFace/semi_rimless.fbx',
+        'default',
+        'sampledata/models/heartFace/semi_rimless.sfa',
+        'src/main/res/raw/semi_rimless')
+
+sceneform.asset('sampledata/models/heartFace/victor_rectangular.fbx',
+        'default',
+        'sampledata/models/heartFace/victor_rectangular.sfa',
+        'src/main/res/raw/victor_rectangular')
+
+
+sceneform.asset('sampledata/models/heartFace/wayfarer.fbx',
+        'default',
+        'sampledata/models/heartFace/wayfarer.sfa',
+        'src/main/res/raw/wayfarer')
+
+sceneform.asset('sampledata/models/ovalFace/new_aviator.fbx',
+        'default',
+        'sampledata/models/ovalFace/new_aviator.sfa',
+        'src/main/res/raw/new_aviator')
+
+sceneform.asset('sampledata/models/ovalFace/square_sunglasses.fbx',
+        'default',
+        'sampledata/models/ovalFace/square_sunglasses.sfa',
+        'src/main/res/raw/square_sunglasses')
+
+sceneform.asset('sampledata/models/mask/muka_bujur.fbx',
+        'default',
+        'sampledata/models/mask/muka_bujur.sfa',
+        'src/main/res/raw/muka_bujur')
+
+sceneform.asset('sampledata/models/mask/muka_bulat.fbx',
+        'default',
+        'sampledata/models/mask/muka_bulat.sfa',
+        'src/main/res/raw/muka_bulat')
+
+sceneform.asset('sampledata/models/mask/muka_hati.fbx',
+        'default',
+        'sampledata/models/mask/muka_hati.sfa',
+        'src/main/res/raw/muka_hati')
+
+sceneform.asset('sampledata/models/mask/muka_petak1.fbx',
+        'default',
+        'sampledata/models/mask/muka_petak1.sfa',
+        'src/main/res/raw/muka_petak1')
+
+sceneform.asset('sampledata/models/mask/muka_petak2.fbx',
+        'default',
+        'sampledata/models/mask/muka_petak2.sfa',
+        'src/main/res/raw/muka_petak2')
+
+sceneform.asset('sampledata/models/mask/muka_bujur1.fbx',
+        'default',
+        'sampledata/models/mask/muka_bujur1.sfa',
+        'src/main/res/raw/muka_bujur1')
+
+
+sceneform.asset('sampledata/models/mask/muka_petak3.fbx',
+        'default',
+        'sampledata/models/mask/muka_petak3.sfa',
+        'src/main/res/raw/muka_petak3')
+
+sceneform.asset('sampledata/models/mask/muka_bulat1.fbx',
+        'default',
+        'sampledata/models/mask/muka_bulat1.sfa',
+        'src/main/res/raw/muka_bulat1')
+
+sceneform.asset('sampledata/models/mask/muka_petak4.fbx',
+        'default',
+        'sampledata/models/mask/muka_petak4.sfa',
+        'src/main/res/raw/muka_petak4')

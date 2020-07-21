@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps:"
+        android:textSize="30sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp">
+
+        <ImageView
+            android:id="@+id/gmbrStep1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/petakmuka"/>
+
+        <TextView
+            android:id="@+id/step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/gmbrStep1"
+            android:layout_marginStart="10dp"
+            android:text="@string/step1"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_arrow_downward_black_24dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/tengah"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp">
+
+        <ImageView
+            android:id="@+id/gmbrStep2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/glasses_png"/>
+
+        <TextView
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/gmbrStep2"
+            android:layout_marginStart="10dp"
+            android:text="@string/step2"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_arrow_downward_black_24dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp">
+
+        <ImageView
+            android:id="@+id/gmbrStep3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/screenshot"/>
+
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/gmbrStep3"
+            android:layout_marginStart="10dp"
+            android:text="@string/step3"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/takeMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:padding="10dp"
+            android:text="@string/button_take"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/gradient_rectangleg_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="button_click"
+            android:elevation="20dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

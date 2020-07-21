@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FaceGlasses</string>
+    <string name="face_shape_action">Face Shape</string>
+    <string name="ar_action">Augmented Glasses</string>
+    <string name="round_description">Round Face Description</string>
+    <string name="heart_description">Heart Face Description</string>
+    <string name="oval_description">Oval Face Description</string>
+    <string name="square_description">Square Face Description</string>
+    <string name="header_top">FaceGlasses</string>
+    <string name="button_start">Get Started</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="description_app">FaceGlasses is an application that provide the fundamental information about face and suitable glasses</string>
+    <string name="menu">Menu</string>
+    <string name="ovalDescription">Oval face is a face that has a bit higher cheek bones and a chin that is narrower than the forehead. It is characterized mostly by a softly curved jawline.</string>
+    <string name="roundDescription">Round face is a face that has equal proportion of length and width. It is a type of circular, soft and curvy face.</string>
+    <string name="heartDescription">Heart face is a face that begins with a wide forehead and gradually narrows down to a pointed chin.</string>
+    <string name="squareDescription">Square face is a face that have broad forehead that are wider from side to side and a strong horizontal jawline.</string>
+    <string name="intro1">Introduction to the relationship between face shape and type of frame glasses.</string>
+    <string name="intro2">On the spot wearing the augmented reality glasses that match your face.</string>
+    <string name="intro3">No worry about internet data and wifi.</string>
+    <string name="face_shape">Pick one from any of these face cards to see its content</string>
+    <string name="step1">Determine your face shape.</string>
+    <string name="step2">Try the virtual try-on glasses.</string>
+    <string name="step3">Screenshot it if you want to share or save.</string>
+    <string name="button_take">Take Me There!</string>
+    <string name="quote">"Glasses not made only for the NERDS!"</string>
+</resources>
